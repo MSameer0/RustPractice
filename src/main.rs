@@ -1,3 +1,5 @@
+use std::io;
+
 fn main() {
     let x = 4;
     println!("x is: {}", x);
@@ -27,4 +29,9 @@ fn main() {
     println!("{}", tup.2);
 
     println!("{}", arr[1]);
+
+    let mut input = String::new();
+    io::stdin().read_line(&mut input).expect("Failed to read line.");
+
+    println!("{}", input);
 }
